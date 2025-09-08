@@ -9,15 +9,15 @@ function product() {
       const imageURL = URL.createObjectURL(imagefile.files[0]);
 
       const productCard = document.createElement("div");
-      productCard.classList.add("bg-white", "rounded", "shadow", "p-4", "text-center");
+     
 
       productCard.innerHTML = `
-        <img src="${imageURL}" alt="${name}" class="w-full h-48 object-cover rounded mb-3">
+        <img src="${imageURL}" alt="${name}" class=" h-48 object-cover rounded mb-3">
         <div>
           <h4 class="font-bold text-lg">Product: ${name}</h4>
           <p class="text-gray-700">LKR: ${price}</p>
           <p class="text-gray-500">Stock: ${quantity}</p>
-          <button class="btnCadd bg-green-500 text-white px-3 py-1 mt-2 rounded">Add to Cart</button>
+          <button class="bg-green-500 text-white px-3 py-1 mt-2 rounded">Add to Cart</button>
         </div>`;
 
       menu.appendChild(productCard);
